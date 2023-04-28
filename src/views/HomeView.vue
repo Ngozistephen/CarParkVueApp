@@ -1,9 +1,7 @@
-<script setup>
+<!-- <script setup>
 import TheWelcome from '../components/TheWelcome.vue'
-</script>
+</script> -->
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  Home View
 </template>
