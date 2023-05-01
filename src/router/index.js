@@ -46,6 +46,12 @@ const router = createRouter({
       beforeEnter: auth,
       component: () => import("@/views/Vehicles/IndexView.vue"),
     },
+    {
+      path: "/profile",
+      name: "profile.edit",
+      beforeEnter: auth,
+      component: () => import("@/views/Profile/EditView.vue"),
+    },
    
   ],
 })
