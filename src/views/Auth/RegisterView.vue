@@ -13,6 +13,7 @@
             autocomplete="name"
             required
           />
+          <ValidationError :errors="store.errors" field="name" />
         </div>
    
         <div class="flex flex-col gap-2 mb-4">
@@ -26,6 +27,7 @@
             autocomplete="email"
             required
           />
+          <ValidationError :errors="store.errors" field="email" />
         </div>
    
         <div class="flex flex-col gap-2 mb-4">
@@ -39,6 +41,7 @@
             autocomplete="new-password"
             required
           />
+          <ValidationError :errors="store.errors" field="password" />
         </div>
    
         <div class="flex flex-col gap-2">
