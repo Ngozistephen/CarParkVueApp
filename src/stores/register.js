@@ -1,9 +1,12 @@
 import { reactive, ref } from "vue";
 import { defineStore } from "pinia";
+import { useAuth } from "@/stores/auth";
 
 
 export const useRegister = defineStore("register", () => {
-    const errors = reactive({});  
+    const errors = reactive({}); 
+    
+    const auth = useAuth();
 
     const loading = ref(false);
 
@@ -33,7 +36,7 @@ export const useRegister = defineStore("register", () => {
         return window.axios
           .post("auth/register", form)
           .then((response) => {
-            console.log(response.data);
+            auth.login(response.data.access_token);
           })
           .catch((error) => {
             if (error.response.status === 422) {
