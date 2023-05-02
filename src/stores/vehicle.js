@@ -24,6 +24,7 @@ export const useVehicle = defineStore("vehicle", () => {
     errors.value = {};
   }
  
+//   To Store vehicle
   function storeVehicle() {
     if (loading.value) return;
  
@@ -43,11 +44,41 @@ export const useVehicle = defineStore("vehicle", () => {
       .finally(() => (loading.value = false));
   }
 
+//   To get a list of vehicles
   function getVehicles() {
     return window.axios
       .get("vehicles")
       .then((response) => (vehicles.value = response.data.data));
   }
+
+
+// Send a single vehicle to form and redirect
+  function updateVehicle(vehicle) {
+    if (loading.value) return;
+   
+    loading.value = true;
+    errors.value = {};
+   
+    window.axios
+      .put(`vehicles/${vehicle.id}`, form)
+      .then(() => {
+        router.push({ name: "vehicles.index" });
+      })
+      .catch((error) => {
+        if (error.response.status === 422) {
+          errors.value = error.response.data.errors;
+        }
+      })
+      .finally(() => (loading.value = false));
+  }
+   
+//   fetch and update single vehicle
+  function getVehicle(vehicle) {
+    window.axios.get(`vehicles/${vehicle.id}`).then((response) => {
+      form.plate_number = response.data.data.plate_number;
+      form.description = response.data.data.description;
+    });
+  }
  
-  return { form, errors, loading, resetForm, storeVehicle,vehicles, getVehicles };
+  return { form, errors, loading, resetForm, storeVehicle,vehicles, getVehicles, updateVehicle, getVehicle};
 });
