@@ -33,7 +33,7 @@ onMounted(store.getVehicles);
             <RouterLink :to="{ name: 'vehicles.edit', params: { id: vehicle.id } }" class="btn btn-secondary text-sm">
                 Edit
             </RouterLink>
-            <button type="button" class="btn text-white bg-red-600 hover:bg-red-500 text-sm">
+            <button type="button" @click="store.deleteVehicle(vehicle)" class="btn text-white bg-red-600 hover:bg-red-500 text-sm">
               X
             </button>
           </div>
