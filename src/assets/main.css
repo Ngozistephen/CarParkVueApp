@@ -35,4 +35,12 @@
     .alert-success {
         @apply text-green-700 bg-green-100 border-green-400
     }
+
+    .btn-secondary {
+        @apply text-white bg-gray-600 hover:bg-gray-500;
+    }
+     
+    .plate {
+        @apply font-mono font-bold uppercase;
+    }
 }
