@@ -13,7 +13,7 @@ import HomeView from '../views/HomeView.vue'
 
   function guest(to, from, next) {
     if (localStorage.getItem("access_token")) {
-      return next({ name: "vehicles.index" });
+      return next({ name: "parkings.active" });
     }
   
     next();

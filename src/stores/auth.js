@@ -19,7 +19,8 @@ export const useAuth = defineStore("auth", () => {
   function login(accessToken) {
     setAccessToken(accessToken);
  
-    router.push({ name: "vehicles.index" });
+    if (origin === "login") return router.push({ name: "parkings.active" });
+    if (origin === "register") return router.push({ name: "vehicles.index" });
   }
  
   function destroyTokenAndRedirectTo(routeName = "login") {
