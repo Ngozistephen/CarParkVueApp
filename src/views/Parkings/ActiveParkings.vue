@@ -14,24 +14,6 @@
     
     onBeforeUnmount(() => clearInterval(interval));
 
-
-
-    // [
-    //     {
-    //         "id": 3,
-    //         "zone": {
-    //             "name": "Red Zone",
-    //             "price_per_hour": 300
-    //         },
-    //         "vehicle": {
-    //             "plate_number": "lrvldly",
-    //             "description": "Paul's car"
-    //         },
-    //         "start_time": "2023-02-01 12:58:46",
-    //         "stop_time": null,
-    //         "total_price": 795
-    //     }
-    // ]
 </script>
  
 <template>
