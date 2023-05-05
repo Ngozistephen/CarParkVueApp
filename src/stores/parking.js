@@ -56,10 +56,13 @@ export const useParking = defineStore("parking", () => {
   }
 
   function getStoppedParkings() {
-    return window.axios.get("parkings/history").then((response) => {
+    return window.axios.get("parking/history").then((response) => {
       stoppedParkings.value = response.data.data;
     });
   }
  
-  return { form, errors, loading, resetForm, startParking, parkings, getActiveParkings, stopParking, stoppedParkings, getStoppedParkings  };
+  return { form, errors, loading, resetForm, startParking, parkings,
+         getActiveParkings, stopParking, stoppedParkings, getStoppedParkings  
+        
+        };
 });
