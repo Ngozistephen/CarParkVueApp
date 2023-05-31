@@ -21,6 +21,9 @@ stop and start parking for a user
 ![Screenshot 2023-05-31 043737](https://github.com/Ngozistephen/CarParkVueApp/assets/60478145/7bdc09b0-cfc1-4dd8-a14e-2a16a1ed6273)
 ![Screenshot 2023-05-31 043828](https://github.com/Ngozistephen/CarParkVueApp/assets/60478145/4a3f296d-7513-4c21-8006-9b6044c5fd04)
 
+Parking History 
+![Screenshot 2023-05-31 044249](https://github.com/Ngozistephen/CarParkVueApp/assets/60478145/54b7d886-1a63-4189-83d9-3248884178b6)
+![Screenshot 2023-05-31 044352](https://github.com/Ngozistephen/CarParkVueApp/assets/60478145/f65b2bc2-4049-469e-8b55-d571d88985d5)
 
 
 ## Recommended IDE Setup
@@ -50,6 +53,8 @@ npm run build
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
+
+## What I learnt from this Project
 
 ```sh
 npm run lint
