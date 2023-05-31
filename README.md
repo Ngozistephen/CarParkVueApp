@@ -10,6 +10,12 @@ This is a Car Park Vue App built for the existing separate Laravel-based API Car
 ![Screenshot 2023-05-31 043129](https://github.com/Ngozistephen/CarParkVueApp/assets/60478145/eab9c36a-3164-472f-9199-d4218ff579f6)
 ![Screenshot 2023-05-31 043159](https://github.com/Ngozistephen/CarParkVueApp/assets/60478145/18dd27f4-045a-4c66-bb21-108d4b70c8bf)
 
+# Manage User Vehicle
+A typical CRUD
+![Screenshot 2023-05-31 043351](https://github.com/Ngozistephen/CarParkVueApp/assets/60478145/4541a93c-d499-40f9-8b02-61f290df0ee4)
+![Screenshot 2023-05-31 043426](https://github.com/Ngozistephen/CarParkVueApp/assets/60478145/c1483c5a-f2ea-472b-9da9-a094f08e99c6)
+![Screenshot 2023-05-31 043508](https://github.com/Ngozistephen/CarParkVueApp/assets/60478145/2be97153-bd38-42a4-bdb6-9355d2c01e62)
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
