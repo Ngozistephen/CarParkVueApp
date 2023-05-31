@@ -54,8 +54,16 @@ npm run build
 
 ### Lint with [ESLint](https://eslint.org/)
 
-## What I learnt from this Project
+
 
 ```sh
 npm run lint
 ```
+## What I learnt from this Project
+** How to use Rest Api to Load and Manage Application data
+** Frontend CRUD
+** State management with Pinia
+** Implementing Authentication in Vue 33
+** How to use Composition Api
+Implementation of data storage with MySql
+
